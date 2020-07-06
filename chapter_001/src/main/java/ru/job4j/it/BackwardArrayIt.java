@@ -9,7 +9,6 @@ public class BackwardArrayIt implements Iterator<Integer> {
 
     public BackwardArrayIt(int[] data) {
         this.data = data;
-        point = data.length - 1> 0 ? data.length : 0;
     }
 
     @Override
@@ -23,7 +22,7 @@ public class BackwardArrayIt implements Iterator<Integer> {
 
             throw new NoSuchElementException();
         }
-        return data[point--];
+        return data[data.length - 1 - point++];
     }
 
     @Override
