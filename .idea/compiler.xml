@@ -19,7 +19,7 @@
       <module name="chapter_003" target="1.7" />
       <module name="chapter_004" target="1.7" />
       <module name="chapter_005" target="1.7" />
-      <module name="job4j_design" target="1.7" />
+      <module name="job4j_design" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>
