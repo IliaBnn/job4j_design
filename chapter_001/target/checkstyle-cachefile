@@ -1,4 +1,3 @@
-#Mon Jul 06 12:41:57 GMT+04:00 2020
-configuration*?=A736AAF627D5571223AB80CFCA56E22611630222
-module-resource*?\:checkstyle-xpath-suppressions.xml=98DC0EE325DCC347CD37B58A2B763FFC97BE9BD2
-module-resource*?\:checkstyle-suppressions.xml=2116242F5D7D493FFFBE4BB148770A16A681A3D0
+#Mon Jul 06 13:46:45 GMT+04:00 2020
+configuration*?=74D67E2D9ADCA324C27F8FE7038F6C65513EE598
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\App.java=1594028788923

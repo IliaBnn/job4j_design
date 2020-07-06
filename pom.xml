@@ -33,13 +33,13 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
-          <configLoaction>checkstyle.xml</configLoaction>
+          <configLocation>checkstyle.xml</configLocation>
         </configuration>
         <executions>
           <execution>
             <phase>validate</phase>
             <goals>
-              <goal>checkstyle</goal>
+              <goal>check</goal>
             </goals>
           </execution>
         </executions>
