@@ -10,6 +10,7 @@ public class EvenArrayIt implements Iterator<Integer> {
     public EvenArrayIt(int[] data) {
         this.data = data;
     }
+
     @Override
     public boolean hasNext() {
         while (index < data.length && !isEven(data[index])) {
