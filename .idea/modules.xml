@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/chapter_004/chapter_004.iml" filepath="$PROJECT_DIR$/chapter_004/chapter_004.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter_005/chapter_005.iml" filepath="$PROJECT_DIR$/chapter_005/chapter_005.iml" />
       <module fileurl="file://$PROJECT_DIR$/job4j_design.iml" filepath="$PROJECT_DIR$/job4j_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tests/tests.iml" filepath="$PROJECT_DIR$/tests/tests.iml" />
     </modules>
   </component>
 </project>

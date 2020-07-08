@@ -111,23 +111,7 @@
               
       </plugin>
             
-      <plugin>
-                
-        <groupId>org.apache.maven.plugins</groupId>
-                
-        <artifactId>maven-surefire-plugin</artifactId>
-                
-        <configuration>
-                    
-          <forkCount>3</forkCount>
-                    
-          <reuseForks>true</reuseForks>
-                    
-          <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-                  
-        </configuration>
-              
-      </plugin>
+
             
       <plugin>
                 
@@ -182,8 +166,6 @@
     <module>chapter_004</module>
         
     <module>chapter_005</module>
-        
-    <module>tests</module>
       
   </modules>
   
