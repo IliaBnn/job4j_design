@@ -4,4 +4,4 @@ Codecov:
   <img src="https://codecov.io/gh/IliaBnn/job4j_design/branch/master/graph/badge.svg" />
 </a>
 Travis CI:
-[![Build Status](https://travis-ci.org/IliaBnn/job4j_design.svg?branch=master)](https://travis-ci.org/IliaBnn/job4j_design)
+[![Build Status](https://travis-ci.com/IliaBnn/job4j_design.svg?branch=master)](https://travis-ci.com/IliaBnn/job4j_design)
