@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 
 public class SimpleArray<T> implements Iterable<T> {
-    Object[] objects;
+    private Object[] objects;
     private int position = 0;
 
     public SimpleArray(int size) {
@@ -13,7 +13,6 @@ public class SimpleArray<T> implements Iterable<T> {
     }
 
     public void add(T model) {
-        Objects.checkIndex(position, objects.length);
         objects[position++] = model;
     }
 
