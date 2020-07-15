@@ -25,7 +25,7 @@ public class SimpleArray<T> implements Iterable<T> {
     public void add(T model) {
         if (container.length == 0) {
             container = new Object[defCapacity];
-        } else {
+        } else if (size == container.length) {
             int newCapacity = container.length * 2;
             container = Arrays.copyOf(container, newCapacity);
         }
