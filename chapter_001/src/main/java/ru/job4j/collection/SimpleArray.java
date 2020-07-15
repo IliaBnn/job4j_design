@@ -1,0 +1,59 @@
+package ru.job4j.collection;
+
+import java.util.*;
+
+public class SimpleArray<T> implements Iterable<T> {
+    private Object[] container;
+    private int modCount = 0;
+    private int size;
+    private final int defCapacity = 10;
+
+    public SimpleArray() {
+        container = new Object[]{};
+    }
+
+    public SimpleArray(int size) {
+        container = new Object[size];
+        this.size = size;
+    }
+
+    public T get(int index) {
+        Objects.checkIndex(index, size);
+        return (T) container[index];
+    }
+
+    public void add(T model) {
+        if (container.length == 0) {
+            container = new Object[defCapacity];
+        } else {
+            int newCapacity = container.length * 2;
+            container = Arrays.copyOf(container, newCapacity);
+        }
+        container[size++] = model;
+        modCount++;
+    }
+
+    @Override
+    public Iterator<T> iterator() {
+        modCount = 0;
+        return new Iterator<T>() {
+            private int position;
+
+            @Override
+            public boolean hasNext() {
+                if (modCount != 0) {
+                    throw new ConcurrentModificationException();
+                }
+                return position < size;
+            }
+
+            @Override
+            public T next() {
+                if (!hasNext()) {
+                    throw new NoSuchElementException();
+                }
+                return (T) container[position++];
+            }
+        };
+    }
+}
