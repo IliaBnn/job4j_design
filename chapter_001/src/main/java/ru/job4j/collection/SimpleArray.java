@@ -35,13 +35,13 @@ public class SimpleArray<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        modCount = 0;
         return new Iterator<T>() {
             private int position;
+            private int expectedModCount = modCount;
 
             @Override
             public boolean hasNext() {
-                if (modCount != 0) {
+                if (modCount != expectedModCount) {
                     throw new ConcurrentModificationException();
                 }
                 return position < size;
