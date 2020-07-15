@@ -26,11 +26,14 @@ public class SimpleArray<T> implements Iterable<T> {
         if (container.length == 0) {
             container = new Object[defCapacity];
         } else if (size == container.length) {
-            int newCapacity = container.length * 2;
-            container = Arrays.copyOf(container, newCapacity);
+            incSize(container.length * 2);
         }
         container[size++] = model;
         modCount++;
+    }
+
+    public void incSize(int newCapacity) {
+        container = Arrays.copyOf(container, newCapacity);
     }
 
     @Override
